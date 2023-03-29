@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFProyectoFinal.Bibliografia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProyectoFinal"
+        mc:Ignorable="d"
+        Title="Bibliografía" Height="700" Width="800" Icon="Icono.ico" Background="Lavender">
+    <Grid>
+        <Menu HorizontalAlignment="Stretch" Height="26" VerticalAlignment="Top" Width="Auto" Background="#FFC8CBFF" FontSize="14">
+            <MenuItem Header="Archivo" FontFamily="Microsoft Sans Serif" FontSize="14" Height="26" VerticalAlignment="Stretch">
+                <MenuItem x:Name="MenuFirma" Header="Firma" Background="#FFE9EBFD" Click="MenuFirma_Click"/>
+                <MenuItem x:Name="MenuRegresar" Header="Regresar" Background="#FFE9EBFD" Click="MenuRegresar_Click" />
+                <MenuItem x:Name="MenuSalir" Header="Salir" Background="#FFE9EBFD" Click="MenuSalir_Click"/>
+            </MenuItem>
+        </Menu>
+        <Image HorizontalAlignment="Left" Height="100" Margin="46,150,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock Foreground="#FF000068" Margin="10,26,10,0" TextWrapping="Wrap" Text="BIBLIOGRAFÍA" VerticalAlignment="Top" FontSize="55" TextAlignment="Center" FontFamily="Gabriola" Height="78" FontWeight="Bold"/>
+        <Image x:Name="ImgBib1" HorizontalAlignment="Left" Height="229" Margin="556,380,0,0" VerticalAlignment="Top" Width="172" Source="Bib1.png" Stretch="Fill" MouseLeftButtonDown="ImgBib1_MouseLeftButtonDown"/>
+        <Image x:Name="ImgBib2" HorizontalAlignment="Left" Height="229" Margin="51,380,0,0" VerticalAlignment="Top" Width="178" Source="Bib2.jpg" Stretch="Fill" MouseLeftButtonDown="ImgBib2_MouseLeftButtonDown"/>
+        <Image x:Name="ImgBib3" HorizontalAlignment="Left" Height="242" Margin="51,104,0,0" VerticalAlignment="Top" Width="361" Source="Bib3.jpg" Stretch="Fill" MouseLeftButtonDown="ImgBib3_MouseLeftButtonDown"/>
+        <Image x:Name="ImgBib4" HorizontalAlignment="Left" Height="229" Margin="292,380,0,0" VerticalAlignment="Top" Width="170" Source="Bib4.png" Stretch="Fill" MouseLeftButtonDown="ImgBib4_MouseLeftButtonDown"/>
+        <TextBlock x:Name="TxtBib" HorizontalAlignment="Left" Margin="446,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="237" Width="282" FontFamily="Tahoma" FontSize="16" TextAlignment="Justify"/>
+    </Grid>
+</Window>

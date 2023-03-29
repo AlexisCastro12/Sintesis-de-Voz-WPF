@@ -1,0 +1,26 @@
+﻿<Page x:Class="WPFProyectoFinal.Calidad"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFProyectoFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="510" d:DesignWidth="850"
+      Title="Calidad de un Sistema TTS">
+
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="340" Margin="438,10,0,0" VerticalAlignment="Top" Width="402">
+            <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Center" Margin="79,0,237,13" VerticalAlignment="Bottom" Width="36" Click="btnPlay_Click"/>
+            <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Center" Margin="248,0,68,13" VerticalAlignment="Bottom" Width="36" Click="btnStop_Click"/>
+            <Button x:Name="btnPause" Content="Pause" HorizontalAlignment="Center" Margin="160,0,151,13" VerticalAlignment="Bottom" Width="41" Click="btnPause_Click"/>
+            <MediaElement x:Name="Video" HorizontalAlignment="Left" Height="207" Margin="10,51,0,0" VerticalAlignment="Top" Width="382" Source="Fonemas.mp4" LoadedBehavior="Manual" Stretch="Fill"/>
+            <TextBlock x:Name="TxtStatus" HorizontalAlignment="Center" Margin="140,0,136,40" TextWrapping="Wrap" Text="00:00 / 00:00" VerticalAlignment="Bottom" Width="76"/>
+            <Slider x:Name="SldStatus" HorizontalAlignment="Center" Margin="10,0,10,56" VerticalAlignment="Bottom" Width="382" ValueChanged="SldStatus_ValueChanged" Height="21"/>
+            <TextBlock x:Name="TxtIntro" HorizontalAlignment="Left" Margin="10,6,0,0" TextWrapping="Wrap" Text="Diferencias entre elementos segmentales y suprasegmentales" VerticalAlignment="Top" Width="382" TextAlignment="Center" FontFamily="Tahoma" Height="45" FontWeight="Bold" FontSize="16"/>
+        </Grid>
+        <TextBlock x:Name="TxtIntro_Copy" HorizontalAlignment="Left" Margin="10,6,0,0" TextWrapping="Wrap" Text="CALIDAD DE UN SISTEMA TTS" VerticalAlignment="Top" Width="423" TextAlignment="Center" FontFamily="Cambria" FontSize="27" Height="34" Foreground="#FF040C2C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="295" Width="423" FontFamily="Arial" FontSize="14" TextAlignment="Justify"><Span><Run Text="Para evaluar la calidad de la voz sintética de un determinado sistema se suelen utilizar dos parámetros: "/></Span><LineBreak/><Span FontWeight="Bold"><Run/></Span><LineBreak/><Span FontWeight="Bold"><Run Text="Inteligibilidad:"/></Span><Span><Run Text=" Está relacionada con la facilidad para comprender la señal oral. Normalmente se acostumbra a relacionar la inteligibilidad con el procesado segmental el cual se encarga de analizar las frecuencias y amplitudes de las unidades mínimas para caracterizar el habla mismas que son denominadas fonemas."/></Span><LineBreak/><Span FontWeight="Bold"><Run/></Span><LineBreak/><Span FontWeight="Bold"><Run Text="Naturalidad de los sonidos:"/></Span><Span><Run Text=" Se acostumbra a relacionar con el procesado prosódico o suprasegmental (conjunto de factores que afectan la pronunciación de una manera global, como la entonación, el ritmo y la intensidad del habla)."/></Span><LineBreak/><Span><Run/></Span><LineBreak/><Run Text="Para comprender las diferencias entre los elementos segmentales y suprasegmentales que se utilizan para mejorar la calidad en el sistema de síntesis de voz se puede recurrir al video "/><Run Text="en la parte superior derecha"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="145" Width="830" FontFamily="Arial" FontSize="14" TextAlignment="Justify"><Span><Run Text="En conclusión, la inteligibilidad y naturalidad se tratan de dos conceptos distintos los cuales no se relacionan forzosamente de manera directa, esto significa que una alta inteligibilidad no implicara alta naturalidad, es decir, habrá sistemas que entreguen señales perfectamente distinguibles, pero con un sonido bastante sintético. En contraste, puede haber sistemas con niveles de naturalidad altos, pero con poca inteligibilidad sin embargo es poco probable encontrarlos. Por lo tanto, siempre se buscará una combinación igual o mejor que la mencionada al principio de este párrafo donde la inteligibilidad sea igual o mejor a la naturalidad, pero siempre colocando a ambas en altos niveles de acuerdo con pruebas como Diagnostic Rhyme Test (DRT) y Articulation Index (AI)."/></Span></TextBlock>
+
+    </Grid>
+</Page>

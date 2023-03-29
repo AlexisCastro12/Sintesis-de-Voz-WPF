@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFProyectoFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProyectoFinal"
+        mc:Ignorable="d"
+        Title="Síntesis de Voz" Height="427" Width="785" Icon="Icono.ico" MaxHeight="427" MaxWidth="785" MinWidth="785" MinHeight="427">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF7C94FF" Offset="1"/>
+            <GradientStop Color="#FF8DFFEF"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBlock Foreground="#FF000055"  HorizontalAlignment="Left" Margin="172,56,0,0" TextWrapping="Wrap" Text="SÍNTESIS DE VOZ" VerticalAlignment="Top" FontSize="55" FontFamily="Stencil"/>
+        <Image HorizontalAlignment="Left" Height="151" Margin="25,166,0,0" VerticalAlignment="Top" Width="290" Source="Portada.jpg" Stretch="Fill"/>
+        <Grid HorizontalAlignment="Left" Height="260" Margin="348,126,0,0" VerticalAlignment="Top" Width="423">
+            <Button x:Name="BtnSeleccion" Content="Aceptar" HorizontalAlignment="Left" Margin="299,222,0,0" VerticalAlignment="Top" Width="108" Height="28" FontFamily="Microsoft Sans Serif" FontSize="16" Click="BtnSeleccion_Click"/>
+            <RadioButton x:Name="RbtnOpc1" Content="Definiciones y Conceptos Básicos" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="20" IsChecked="True"/>
+            <RadioButton x:Name="RbtnOpc3" Content="Funcionamiento del Sistema" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="20"/>
+            <RadioButton x:Name="RbtnOpc4" Content="Aplicación Text-To-Speech" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="20"/>
+            <RadioButton x:Name="RbtnOpc2" Content="Antecedentes y Evolución" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Seleccione el contenido que desee visualizar:" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="20"/>
+        </Grid>
+        <Menu HorizontalAlignment="Stretch" Height="26" VerticalAlignment="Top" Width="Auto" Background="#FFC8CBFF" FontSize="14">
+            <MenuItem Header="Archivo" FontFamily="Microsoft Sans Serif" FontSize="14" Height="26" VerticalAlignment="Stretch">
+                <MenuItem x:Name="MenuFirma" Header="Firma" Background="#FFE9EBFD" Click="MenuFirma_Click"/>
+                <MenuItem x:Name="MenuBiblio" Header="Bibliografía" Background="#FFE9EBFD" Click="MenuBiblio_Click" />
+                <MenuItem x:Name="MenuSalir" Header="Salir" Background="#FFE9EBFD" Click="MenuSalir_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

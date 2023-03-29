@@ -1,0 +1,27 @@
+﻿<Page x:Class="WPFProyectoFinal.Def"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFProyectoFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="510" d:DesignWidth="850"
+      Title="Introducción y Definición">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="430" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" TextAlignment="Justify" FontFamily="Arial" FontSize="16" Foreground="#FF060606"><Span><Run Text="La forma más habitual de comunicación entre las personas y las máquinas suele ser a través de una pantalla o visualizador, en la que el usuario lee una determinada información. Sin embargo, resulta más agradable poder recibir ciertas informaciones de la misma manera que las comunicamos entre personas: mediante una comunicación oral en nuestro propio idioma. En la actualidad, podemos tener un sistema equivalente a la presencia de una persona que nos vaya leyendo el texto. Sin lugar a dudas, estos sistemas resultan de gran utilidad para invidentes,"/></Span><Span><Run Text=" "/></Span><Span><Run Text="situaciones con poca iluminación en las que no resulta factible realizar una lectura, dispositivos en los que es más económico o práctico incorporar un altavoz que una pantalla, etc."/></Span><LineBreak/><Span><Run/></Span><LineBreak/><Span><Run Text="La "/></Span><Span FontWeight="Bold"><Run Text="síntesis de habla"/></Span><Span><Run Text=" es la producción artificial del habla. El sistema computarizado que es usado con este propósito es llamado "/></Span><Span FontWeight="Bold"><Run Text="computadora de habla"/></Span><Span><Run Text=" o "/></Span><Span FontWeight="Bold"><Run Text="sintetizador de voz"/></Span><Span><Run Text=" y puede ser implementado en productos "/></Span><Span><Run Text="software"/></Span><Span><Run Text=" o hardware. Un sistema "/></Span><Span FontWeight="Bold"><Run Text="text-to-speech (TTS)"/></Span><Span><Run Text=" convierte el lenguaje de texto normal en habla; otros sistemas recrean la representación simbólica lingüística como transcripciones fonéticas en habla"/></Span><LineBreak/><Run Text=""/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="100" Margin="532,28,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.245,0.425"/>
+        <Image HorizontalAlignment="Left" Height="158" Margin="590,98,0,0" VerticalAlignment="Top" Width="164" Source="DefTTS.png" Stretch="Fill"/>
+        <Grid HorizontalAlignment="Left" Height="148" Margin="538,261,0,0" VerticalAlignment="Top" Width="260">
+            <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="52,119,0,0" VerticalAlignment="Top" Width="36" Click="btnPlay_Click"/>
+            <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="179,119,0,0" VerticalAlignment="Top" Width="36" Click="btnStop_Click"/>
+            <Button x:Name="btnPause" Content="Pause" HorizontalAlignment="Left" Margin="111,119,0,0" VerticalAlignment="Top" Width="41" Click="btnPause_Click"/>
+            <MediaElement x:Name="Audio" HorizontalAlignment="Left" Height="36" Margin="10,7,0,0" VerticalAlignment="Top" Width="39" Source="SintesisIntro.mp3" LoadedBehavior="Manual" Stretch="Fill"/>
+            <TextBlock x:Name="TxtStatus" HorizontalAlignment="Left" Margin="98,98,0,0" TextWrapping="Wrap" Text="00:00 / 00:00" VerticalAlignment="Top" Width="76"/>
+            <Slider x:Name="SldStatus" HorizontalAlignment="Left" Margin="21,78,0,0" VerticalAlignment="Top" Width="222" ValueChanged="SldStatus_ValueChanged"/>
+            <TextBlock x:Name="TxtIntro" HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Introducción a la Síntesis de Voz (Audio)" VerticalAlignment="Top" Width="240" TextAlignment="Center" FontFamily="Tahoma" FontSize="13"/>
+        </Grid>
+        <TextBlock x:Name="TxtIntro_Copy" HorizontalAlignment="Left" Margin="486,10,0,0" TextWrapping="Wrap" Text="INTRODUCCIÓN Y DEFINICIÓN" VerticalAlignment="Top" Width="354" TextAlignment="Center" FontFamily="Cambria" FontSize="27" Height="66" Foreground="#FF040C2C"/>
+
+    </Grid>
+</Page>

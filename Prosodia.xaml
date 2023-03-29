@@ -1,0 +1,17 @@
+﻿<Page x:Class="WPFProyectoFinal.Prosodia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFProyectoFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="535" d:DesignWidth="825"
+      Title="Modelado Prosódico">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="180" Width="805" FontFamily="Arial" FontSize="16" TextAlignment="Justify"><Span><Run Text="la prosodia involucra la parte de la comunicación humana que expresa las emociones, enfatiza palabras, muestra la actitud del hablante, divide una oración en frases, y también implica el ritmo y la entonación en el habla. La correcta generación de esta información repercutirá directamente en la naturalidad y expresividad del sistema."/></Span><LineBreak/><Span><Run Text="Por ello, en un conversor texto a voz se incluirán módulos para la generación de los diferentes componentes de la prosodia. Cada uno de estos módulos hará un uso particular de la secuencia de unidades segmentales (por ejemplo: fonemas), suprasegmentales (por ejemplo: sílabas o acentos), palabras, oraciones y párrafos."/></Span><LineBreak/><Span><Run Text="La importancia de la prosodia se ve reflejado en que puede modificar el contenido de un mensaje. Por ejemplo, la frase irás al cine es una afirmación si existe una declinación de la entonación al final de la oración. Sin embargo, será interpretada como una pregunta si la frecuencia fundamental sube al final de la frase."/></Span></TextBlock>
+        <TextBlock x:Name="TxtProceso" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="MODELADO PROSÓDICO" VerticalAlignment="Top" Width="805" TextAlignment="Center" FontFamily="Cambria" FontSize="27" Height="41" Foreground="#FF040C2C"/>
+        <Image HorizontalAlignment="Left" Height="275" Margin="152,226,0,0" VerticalAlignment="Top" Width="523" Source="Prosodia.png" Stretch="Fill"/>
+
+    </Grid>
+</Page>

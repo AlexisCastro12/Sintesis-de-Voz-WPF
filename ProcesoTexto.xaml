@@ -1,0 +1,20 @@
+﻿<Page x:Class="WPFProyectoFinal.ProcesoTexto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFProyectoFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="535" d:DesignWidth="825"
+      Title="Procesamiento de Texto">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="122" Width="805" FontFamily="Arial" FontSize="14" TextAlignment="Justify"><Span><Run Text="El procesamiento de texto es una tarea muy compleja que incluye un conjunto de problemas que son altamente dependientes del idioma y del dominio, tales como la normalización del texto y la transcripción fonética. Por ello son necesarios enfoques particulares para cada idioma con el objeto de convertir un texto con un formato particular en una secuencia de unidades segmentales (por ejemplo: fonemas), suprasegmentales (por ejemplo: sílabas), palabras, oraciones y párrafos, aptos para su utilización por parte de los módulos de generación de la prosodia y de la voz."/></Span><LineBreak/><Span><Run/></Span><LineBreak/><Run Text="Para conocer mejor como se constituye este primer bloque haz clic en cualquiera de las imágenes"/><Run Text="."/></TextBlock>
+        <TextBlock x:Name="TxtContenidoSubproceso" HorizontalAlignment="Left" Margin="357,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="223" Width="458" FontFamily="Arial" FontSize="14" TextAlignment="Justify"/>
+        <Image x:Name="ImgNormalizacion" HorizontalAlignment="Left" Height="188" Margin="26,175,0,0" VerticalAlignment="Top" Width="312" Stretch="Fill" Source="Proceso1.png" MouseLeftButtonDown="ImgNormalizacion_MouseLeftButtonDown"/>
+        <Image x:Name="ImgFonetica" HorizontalAlignment="Left" Height="136" Margin="66,372,0,0" VerticalAlignment="Top" Width="231" Stretch="Fill" Source="Proceso2.png" MouseLeftButtonDown="ImgFonetica_MouseLeftButtonDown"/>
+        <TextBlock x:Name="TxtProceso" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="PROCESAMIENTO DE TEXTO" VerticalAlignment="Top" Width="805" TextAlignment="Center" FontFamily="Cambria" FontSize="27" Height="41" Foreground="#FF040C2C"/>
+        <TextBlock x:Name="TxtTituloSubproceso" HorizontalAlignment="Left" Margin="357,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="458" TextAlignment="Center" FontFamily="Cambria" FontSize="20" Height="26" Foreground="#FF040C2C"/>
+
+    </Grid>
+</Page>

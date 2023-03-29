@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFProyectoFinal.Evolucion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProyectoFinal"
+        mc:Ignorable="d"
+        Title="Antecedentes y Evolución de la Síntesis de Voz" Height="700" Width="1150" Icon="Icono.ico" Background="Azure" MinHeight="700" MaxHeight="700" MinWidth="1150" MaxWidth="1150" WindowState="Maximized">
+    <Grid>
+        <Menu HorizontalAlignment="Stretch" Height="26" VerticalAlignment="Top" Width="Auto" Background="Lavender"  FontSize="14">
+            <MenuItem Header="Archivo" FontFamily="Microsoft Sans Serif" FontSize="14" Height="26" VerticalAlignment="Stretch">
+                <MenuItem x:Name="MenuFirma" Header="Firma" Background="#FFE9EBFD" Click="MenuFirma_Click"/>
+                <MenuItem x:Name="MenuBiblio" Header="Bibliografía" Background="#FFE9EBFD" Click="MenuBiblio_Click" />
+                <MenuItem x:Name="MenuRegresar" Header="Regresar" Background="#FFE9EBFD" Click="MenuRegresar_Click"/>
+                <MenuItem x:Name="MenuSalir" Header="Salir" Background="#FFE9EBFD" Click="MenuSalir_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock Foreground="#FF000068" Margin="38,39,38,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="55" TextAlignment="Center" FontFamily="Gabriola" Height="72" FontWeight="Bold"><Run Text="ANTECEDENTES Y EVOLUCIÓN DE LA"/><Run Text=" "/><Run Text="SÍNTESIS DE VOZ"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="38,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="1066" FontFamily="Arial" FontSize="14"><Span><Run Text="El hombre desde siempre se ha sentido fascinado por su capacidad de hablar y escuchar. Sin esta habilidad para comunicar fluidamente ideas la sociedad actual, probablemente no habría podido desarrollarse. De aquí nace la obsesión por crear instrumentos capaces de producir y reconocer voz, imitándonos a nosotros mismos."/></Span><LineBreak/><Span><Run/></Span><LineBreak/><Span><Run Text="Un sistema de síntesis o sintetizador de voz es un instrumento capaz de producir una señal acústica que imita la voz humana"/></Span><Run Text=". Para conocer acerca de la historia, evolución y estado actual de este tipo de sistemas se presentan paginas web y documentos que exponen a detalle el instante en el que comienza el estudio de la voz humana hasta llegar a los dispositivos actuales "/><Run Text="que permiten ejecutar"/><Run Text=" aplicaciones TTS."/></TextBlock>
+        <Button x:Name="btnAntyEvol" Content="Antecedentes y Evolución" HorizontalAlignment="Left" Margin="162,225,0,0" VerticalAlignment="Top" Width="185" Height="28" Click="btnAntyEvol_Click"/>
+        <Button x:Name="BtnEdoAct" Content="Estado Actual" HorizontalAlignment="Left" Margin="746,225,0,0" VerticalAlignment="Top" Width="185" Height="28" Click="BtnEdoAct_Click"/>
+        <Frame x:Name="FrameEvol" Content="Frame" HorizontalAlignment="Left" Height="380" Margin="38,270,0,0" VerticalAlignment="Top" Width="1065" Source="/WPFProyectoFinal;component/PDFHistoria.xaml"/>
+    </Grid>
+</Window>

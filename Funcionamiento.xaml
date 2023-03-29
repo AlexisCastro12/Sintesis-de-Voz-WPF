@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFProyectoFinal.Funcionamiento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFProyectoFinal"
+        mc:Ignorable="d"
+        Title="Funcionamiento del Sistema de Síntesis de Voz" Height="700" Width="1200" Background="#FFB8FFD8" Icon="Icono.ico" MinHeight="700" MaxHeight="700" MinWidth="1200" MaxWidth="1200" WindowState="Maximized">
+    <Grid>
+        <Menu HorizontalAlignment="Stretch" Height="26" VerticalAlignment="Top" Width="Auto" Background="#FFFFF7C8" FontSize="14">
+            <MenuItem Header="Archivo" FontFamily="Microsoft Sans Serif" FontSize="14" Height="26" VerticalAlignment="Stretch">
+                <MenuItem x:Name="MenuFirma" Header="Firma" Background="#FFE9EBFD" Click="MenuFirma_Click"/>
+                <MenuItem x:Name="MenuBiblio" Header="Bibliografía" Background="#FFE9EBFD" Click="MenuBiblio_Click" />
+                <MenuItem x:Name="MenuRegresar" Header="Regresar" Background="#FFE9EBFD" Click="MenuRegresar_Click"/>
+                <MenuItem x:Name="MenuSalir" Header="Salir" Background="#FFE9EBFD" Click="MenuSalir_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock Foreground="#FF000068" Margin="32,34,33,0" TextWrapping="Wrap" Text="FUNCIONAMIENTO DEL SISTEMA DE SÍNTESIS DE VOZ" VerticalAlignment="Top" FontSize="55" TextAlignment="Center" FontFamily="Gabriola" Height="78" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="534" Margin="32,125,0,0" VerticalAlignment="Top" Width="297" Stretch="Fill" Source="Sistema.png" RenderTransformOrigin="0.5,0.5"/>
+        <Frame x:Name="FrameFuncionamiento" Content="Frame" HorizontalAlignment="Left" Height="535" Margin="356,125,0,0" VerticalAlignment="Top" Width="825" Source="/WPFProyectoFinal;component/ProcesoTexto.xaml"/>
+        <TextBlock x:Name="BtnProcesamiento" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="172" Width="319" MouseLeftButtonDown="BtnProcesamiento_MouseLeftButtonDown"/>
+        <TextBlock x:Name="BtnProsodia" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="172" Width="319" MouseLeftButtonDown="BtnProsodia_MouseLeftButtonDown"/>
+        <TextBlock x:Name="BtnVoz" HorizontalAlignment="Left" Margin="10,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="185" Width="319" MouseLeftButtonDown="BtnVoz_MouseLeftButtonDown"/>
+    </Grid>
+</Window>
